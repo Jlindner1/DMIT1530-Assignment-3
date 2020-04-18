@@ -579,5 +579,9 @@ footer .flexcontainer:last-of-type {
         margin: 0 auto;
     }
 
+    .banner {
+        background-size: cover;
+    }
+
 }
 
