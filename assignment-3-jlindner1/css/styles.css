@@ -399,6 +399,20 @@ footer .flexcontainer:last-of-type {
         align-items: flex-end;
     }
 
+    .banner h1 {
+
+        font-size: 3rem;
+    }
+
+    .banner p {
+        font-size: 1.5rem;
+    }
+
+    .banner {
+        padding: 8.25rem 7rem;
+        
+    }
+
     .featurecard {
         display: flex;
         justify-content: space-between;
