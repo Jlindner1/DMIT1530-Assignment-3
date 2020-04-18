@@ -63,9 +63,13 @@ header .flexcontainer {
     padding: 1.56rem 1.5rem;
 }
 
+.header-container {
+    display: flex;
+}
+
 .headertext {
     text-align: left;
-    margin: auto 0;
+    margin-left: .75rem;
 }
 .headertext a {
     font-weight: 900;
@@ -132,6 +136,11 @@ header nav {
     color: #707070;
     font-style: normal;
     margin-left: 1rem;
+}
+
+.menu-links li img {
+    display: block;
+    max-width: 100%;
 }
 
 /* banner */
@@ -202,7 +211,6 @@ header nav {
 }
 
 .teamcard {
-    max-width: 10.3125rem;
     padding-top: 1.625rem;
     text-align: left;
 }
@@ -212,6 +220,11 @@ header nav {
     font-size: 1.25rem;
     color: #7b7b7b;
     margin-top: 1.5rem;
+}
+
+.teamcard img {
+    display: block;
+    width: 100%;
 }
 
 .team .flexcontainer {
@@ -334,5 +347,114 @@ footer .flexcontainer:last-of-type {
 }
 
 
+/* Tablet view */
 
+@media only screen and (min-width: 768px) {
+
+    .icon-toggle {
+        display: none;
+    }
+
+    header nav {
+        width: 100%;
+        max-height: 5.625rem;
+        position: static;
+    }
+
+    .menu-links{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .menu-links li {
+        flex-wrap: wrap;
+        justify-content: center;
+        border-right: 1px solid #939393;
+        width: 100%;
+    }
+
+    .menu-links a {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .menu-links li:last-of-type{
+        margin-bottom: 0;
+        border: none;
+    }
+
+    .headertext a {
+        font-size: 2.4rem;
+    }
+
+    header .flexcontainer {
+        max-height: 5.875rem;
+        padding: 0;
+    }
+
+    .header-container {
+        padding-left: 1.25rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+        align-items: flex-end;
+    }
+
+    .featurecard {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+
+    .feat-col {
+        max-width: 85%;
+        margin-left: 1.875rem;
+    }
+
+    .feature-bottom {
+        background-position:center;
+    }
+
+    .teamcard {
+        flex-basis: 48%;
+    }
+
+    .teamcard h4 {
+        font-size: 2.44rem;
+    }
+
+    .info-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .feature-cards {
+        max-width: 48%;
+    }
+
+    .widecard {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-column {
+        flex-basis: 48%;
+    }
+
+    .footerlogoflex {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Desktop view */
+
+@media only screen and (min-width: 1140px) {
+
+}
 
