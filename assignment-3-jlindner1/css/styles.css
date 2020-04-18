@@ -7,6 +7,7 @@
     /* max-width: 25rem; */
     margin: 0 auto;
     text-align: center;
+    background-color: #ebebeb;
 }
 
 .flexcontainer {
@@ -371,6 +372,7 @@ footer .flexcontainer:last-of-type {
         justify-content: center;
         border-right: 1px solid #939393;
         width: 100%;
+        border-bottom: 1rem #8f33c4 solid;
     }
 
     .menu-links a {
@@ -469,6 +471,113 @@ footer .flexcontainer:last-of-type {
 /* Desktop view */
 
 @media only screen and (min-width: 1140px) {
+
+    header nav {
+        max-width: 71.25rem;
+        margin: 0 auto;
+    }
+
+    header .flexcontainer {
+        max-width: 71.25rem;
+        margin: 0 auto;
+    }
+
+    .banner div {
+        max-width: 47rem;
+        margin: 0 auto;
+    }
+
+    .feature-banner {
+        max-width: 71.25rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .feature-header h3 {
+        font-size: 3rem;
+    }
+
+    .feature-header p {
+        font-size: 2rem;
+    }
+
+    .featurecontainer {
+        max-width: 71.25rem;
+        margin: 0 auto;
+        display: flex;
+        padding-bottom: 2.5rem;
+    }
+
+    .featurecard {
+        flex-wrap: wrap;
+        flex-basis: 33%;
+        justify-content: center;
+        align-content: space-between;
+    }
+
+    .feature-bottom {
+        padding-top: 22.5rem;
+    }
+
+    .team {
+        max-width: 71.25rem;
+        margin: 0 auto;
+    }
+
+    .team-header {
+        max-width: 71.25rem;
+        margin: 0 auto 2rem;
+    }
+    .team-header h3 {
+        font-size: 3rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .teambanner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .teambanner span {
+        width: 14rem;
+        height: 2px;
+        background-color: #c9c9c9;
+    }
+
+    .teamcard {
+        flex-basis: 23%;
+        justify-content: space-between;
+    }
+
+    .team .flexcontainer {
+        max-width: 71.25rem;
+        margin: 0 auto;
+    }
+
+    .info-cards {
+        flex-wrap: nowrap;
+        max-width: 71.25rem;
+        margin: 0 auto;
+    }
+
+    .widecard {
+        max-width: none;
+        flex-basis: 100%;
+    }
+
+    .feature-cards {
+        max-width: none;
+        flex-basis: 30%;
+    }
+
+    .footer-content {
+        max-width: 71.25rem;
+        margin: 0 auto;
+    }
 
 }
 
